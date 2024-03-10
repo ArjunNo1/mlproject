@@ -1,6 +1,5 @@
-import logging
 import sys
-
+from src.logger import logging
 def exception_handler( error_details):
     filename = error_details[2].tb_frame.f_code.co_filename
     lineno = error_details[2].tb_lineno
@@ -21,11 +20,11 @@ class MyException(Exception):
 
     def __str__(self):
         return self.error
-# try:
-#     # Code that might raise an exception
-#     1 / 0
-# except Exception as e:
-#     # obj = MyException(sys.exc_info())
-#     # print(obj)
-#     logging.info("Hello Exception Occured")
-#     raise MyException(sys.exc_info())
+try:
+    # Code that might raise an exception
+    1 / 0
+except Exception as e:
+    # obj = MyException(sys.exc_info())
+    # print(obj)
+    logging.info("Hello I'm from Exception Page ,")
+    raise MyException(sys.exc_info())
