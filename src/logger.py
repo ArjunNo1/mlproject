@@ -12,3 +12,6 @@ logging.basicConfig(filename =log_file_path,
 
 if __name__=='__main__':
     logging.info("Hi,Im from logger file when executed as main file")
+
+
+    

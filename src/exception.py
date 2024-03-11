@@ -20,11 +20,12 @@ class MyException(Exception):
 
     def __str__(self):
         return self.error
-try:
-    # Code that might raise an exception
-    1 / 0
-except Exception as e:
-    # obj = MyException(sys.exc_info())
-    # print(obj)
-    logging.info("Hello I'm from Exception Page ,")
-    raise MyException(sys.exc_info())
+    
+# try:
+#     # Code that might raise an exception
+#     1 / 0
+# except Exception as e:
+#     # obj = MyException(sys.exc_info())
+#     # print(obj)
+#     logging.info("Hello I'm from Exception Page ,")
+#     raise MyException(sys.exc_info())
